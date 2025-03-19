@@ -1,5 +1,5 @@
 :root {
-    --color-primary: #4B69FD;
+    --color-primary: #C7DB9C;
     --color-secondary: #FFF9EB;
     --color-tertiary: #C4C4C4;
     --color-button: #fe652b;
@@ -7,6 +7,32 @@
     --color-text: #444444;
     --color-white: #FFFFFF;
 }
+
+#listaAmigos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.nombre-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color:var(--color-white);
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid var(--color-primary);
+}
+
+.boton-eliminar {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 10%;
+}
+
 
 /* Estilos generales */
 * {
@@ -161,4 +187,10 @@ ul {
 
 .button-draw:hover {
     background-color: var(--color-button-hover);
+}
+
+/* Resultado sorteo */
+.result-list {
+    margin-top: 20px;
+    font-size: 18px;
 }
